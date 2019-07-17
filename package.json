@@ -1,23 +1,25 @@
 {
   "name": "next-cookie-auth",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Cookie authentication with Next.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "NODE_ENV=production node server.js",
+    "build": "next build",
+    "deploy": "now --public"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Reed Barger",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.0",
-    "cookie-parser": "^1.4.4",
-    "express": "^4.17.1",
-    "next": "^9.0.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "axios": "^0.18.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "next": "^7.0.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.18.5"
   }
 }
